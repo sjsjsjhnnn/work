@@ -1,0 +1,415 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+body { 
+  font-family: Arial;
+}
+.header {
+  width: 100%;
+  height:50px;
+  overflow: hidden;
+  padding: 20px 30px;
+  display:flex;
+  justify-content: space-around;
+}
+.img{
+  width: max-content;
+  float: left;
+  flex-grow: 1;
+}
+.main{
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+  background:url(img/fon.png);
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-color: #291fb1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-right a {
+  float: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px;
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 15px; 
+  line-height: 10px;
+  border-radius: 4px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+  flex-grow: 1.5;
+}
+
+.InfoMainBlock{
+  width: 85%;
+  min-height: 70vh;
+  height: max-content;
+  text-align: center;
+  background: rgb(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+h1{
+  padding: 85px;
+  font-size: 30px;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+}
+.p{
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 1);
+  padding: 0px 40px 100px 40px; 
+}
+.button{
+  width: max-content;
+  height: max-content;
+  background:none;
+  border: 2px solid white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.7s;
+  padding: 20px 25px;
+}
+.text{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding-top: 80px;
+  text-shadow: 3px 2px 0px rgb(0, 0, 0);
+  padding-bottom: 50px;
+}
+.hamburger-menu{
+  display: none;
+}
+.header-right a:hover{
+  text-decoration: underline 2px;
+}
+.button:hover{
+  background: black;
+  opacity: 1;
+  transition: 0.6s;
+}
+@media screen and (max-width: 860px) {
+  .main{
+    display: none;
+    display: block;
+    display: flex;
+  }
+  .hamburger-menu{
+    display: block;
+  }
+  .img{
+      display: none;
+  }
+  .header{
+    background: none;
+  }
+  .header a {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+}
+
+/**/
+.subscription{
+  width: 100%;
+  height: max-content;
+  background:url(img/tree.png);
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px 40px 0px;
+}
+.subscriptionBlock{
+  width: 85%;
+  height: max-content;
+  text-align: center;
+  background: rgb(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding-bottom: 30px;
+}
+.subscriptionH2{
+  font-size: 25px;
+  text-shadow: 3px 2px 0px #9656be;
+  padding-top: 30px;
+}
+.subscriptionGridBlock{
+  width: 85%;
+  height: max-content;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.subscriptionInform{
+  min-width: 190px;
+  width: 30%;
+  min-height: 120px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+/**/
+.card {
+    width: 320px;
+    min-height: 28vh;
+    height: max-content;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 160px;
+}
+.front_side1, .back_side1{
+    position: absolute;
+    width: 100%;
+    min-height: 28vh;
+    height: max-content;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+.back_side1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    border: 10px solid rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+}
+.back_side1{
+    transform: rotateY(180deg);
+}
+.front_side1 {
+    border: 10px solid rgba(0, 0, 0, 0.6);
+}
+.img-overlay{
+    width: 100%;
+    height: max-content;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.block{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.block1{
+    display: flex;
+    justify-content: center;
+}
+.blockss{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    font-size: 18px;
+    margin-top: 5%;
+}
+.blockss2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.c{
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+}
+.card:hover .front_side1{
+    transform: rotateY(180deg);
+}
+.card:hover .back_side1 {
+    transform: rotateY(360deg);
+}
+.level,.level2,.level3,.level4{
+  text-shadow: 3px 2px 0px #9656be;
+}
+
+/**/
+
+.InformBlock{
+  width: 100%;
+  height: max-content;
+  min-height: 500px;
+  background:black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px;
+}
+.InformBlockH2{
+  font-size: 25px;
+  text-shadow: 3px 2px 0px #4260b6;
+}
+.services{
+  width: 60%;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 1.5;
+}
+.blockServices1,.blockServices2,.blockServices3{
+  width: 280px;
+  min-height: 36vh;
+  height: max-content;
+  background: #474545;
+  margin-top: 70px;
+  padding-bottom: 30px;
+}
+.groupLessons,.individualLessons{
+  text-shadow: 3px 3px 0px #000000;
+  padding: 30px 30px 130px 30px;
+}
+.rentOfHalls{
+  text-shadow: 3px 3px 0px #000000;
+  padding: 30px 30px 155px 30px;
+}
+.learnMore1,.learnMore2{
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 15px;
+}
+.learnMore3{
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 15px;
+}
+.learnMore1:hover,.learnMore2:hover,.learnMore3:hover{
+  border-bottom:2px solid rgb(255, 255, 255);
+}
+@media screen and (max-width: 1300px) {
+  .services{
+    width: 80%;
+  }
+}
+
+
+.endBlock{
+  width: 100%;
+  height: max-content;
+  min-height: 300px;
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Footer{
+  width: 100%;
+  height: max-content;
+  background: black;
+  display: flex;
+  padding-top: 60px;
+  flex-wrap: wrap;
+}
+.Contacts{
+  margin-top: 30px;
+}
+.grafic{
+  margin-top: 60px;
+}
+.graficp{
+  margin-bottom: 30px;
+}
+.tel{
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 980px) {
+  .grafic{
+    margin-top: 30px;
+  }
+}
+.FooterSon p{
+  padding: 5px 120px;
+}
+.FooterSon h3{
+  padding: 0px 100px 20px 120px;
+}
+.FooterSon a{
+  text-decoration: none;
+}
+.FooterSon2{
+  padding-left: 120px;
+}
+.adres{
+  margin-top: 50px;
+}
+.pp{
+  width: 100%;
+  padding: 60px 0px 40px 120px;
+  font-size: 12px;
+  color: rgb(255, 255, 255, 0.6);
+}
+.FooterSon2 input{
+  width: 70%;
+  color:black;
+  margin-top:10px;
+  border: none;
+  padding: 15px 0px 15px 25px;
+  border-radius: 5px;
+}
+.up{
+  width: 38px;
+  height: 38px;
+  padding: 10px;
+  border-radius:50%;
+  background:none;
+  border: 2px solid white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.7s;
+}
+.upbutton{
+  width: 40px;
+  height: 45px;
+  margin-left:15px;
+  margin-top: 15px;
+}
+.l{
+  display: flex;
+}
+.up:hover{
+  background: rgb(255, 255, 255);
+  opacity: 1;
+  transition: 0.6s;
+}
